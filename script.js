@@ -1,12 +1,19 @@
-let Gameboard = (function() {
-    gameBoard = ["[x,o,x],[o,o,o],[o,o,o]"]; 
+const GameBoard = (function(){
+    const gameBoard = [];
+
 
 })();
 
-let refferee = (function(arr){
+const player = (name,symbol) =>{
+    this.name = name ; 
+    this.symbol = symbol; 
 
-})
+    const getSymbol = () =>{
+        return this.symbol; 
+    }
 
-let Player = (name) =>{
-    this.name = name; 
+    const getName = () =>{
+        return this.name;
+    }
+    return {getSymbol,getName}
 }
