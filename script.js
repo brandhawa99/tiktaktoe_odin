@@ -1,5 +1,24 @@
 const GameBoard = (function(){
-    const gameBoard = [];
+    const gameBoard = ["","","","","","","","",""];
+
+    //cache DOM 
+    let _buttons = document.querySelectorAll('#game_button')
+    
+    
+    //addEventListener to buttons
+
+    _buttons.forEach(button =>{
+        button.addEventListener('click',()=>{
+            console.log(button.dataset.value)
+            if(gameBoard[button.dataset.value] !== ""){
+                console.log('space is used');
+                return;
+            }
+            gameBoard[button.dataset.value] = "x";
+            button.textContent = "X";
+            console.log(gameBoard);
+        })
+    })
 
 
 })();
