@@ -11,6 +11,12 @@ body {
   font-weight: 700;
   padding: 25px;
 }
+.x {
+  font-size: xx-large;
+}
+.circle {
+  font-size: xx-large;
+}
 .container {
   display: flex;
   flex-direction: column;
