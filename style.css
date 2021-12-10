@@ -50,6 +50,9 @@ body {
   width: 80vw;
   min-width: fit-content;
 }
+.bold {
+  font-weight: 800;
+}
 .squares {
   border-width: 1px;
   border-color: white;
