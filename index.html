@@ -5,26 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="circle.svg" />
     <script src="script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <div class="header">- TIK TAK TOE -</div>
     <div class="container">
-      <button class="restart">restart</button>
-      <button class="circle">o</button>
-      <button class="x">x</button>
-      <div class="gameArea">
-        <button id="game_button" data-value="0"></button>
-        <button id="game_button" data-value="1"></button>
-        <button id="game_button" data-value="2"></button>
-        <button id="game_button" data-value="3"></button>
-        <button id="game_button" data-value="4"></button>
-        <button id="game_button" data-value="5"></button>
-        <button id="game_button" data-value="6"></button>
-        <button id="game_button" data-value="7"></button>
-        <button id="game_button" data-value="8"></button>
+      <div class="images">
+        <div class="left">
+          <img src="./img/user.svg" alt="" srcset="" />
+        </div>
+
+        <div class="right">
+          <img src="./img/hard-drive.svg" alt="" srcset="" />
+        </div>
       </div>
+      <button class="restart">restart</button>
+      <div class="tiktaktoe_board">
+        <button class="squares" data-value="0"></button>
+        <button class="squares" data-value="1"></button>
+        <button class="squares" data-value="2"></button>
+        <button class="squares" data-value="3"></button>
+        <button class="squares" data-value="4"></button>
+        <button class="squares" data-value="5"></button>
+        <button class="squares" data-value="6"></button>
+        <button class="squares" data-value="7"></button>
+        <button class="squares" data-value="8"></button>
+      </div>
+      <div class="game-text">Make a move!</div>
     </div>
   </body>
 </html>
